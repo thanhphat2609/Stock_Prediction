@@ -29,7 +29,9 @@ start-all.sh
 
 ```
 hdfs dfs -mkdir -p /user/thanhphat/datalake
+hdfs dfs -mkdir -p /user/hive/warehouse
 ```
+
 
 4. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
 
