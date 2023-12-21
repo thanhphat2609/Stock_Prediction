@@ -39,5 +39,6 @@ hdfs dfs -mkdir -p /user/hive/warehouse
 
 - `spark-ingest.py`: File for Ingestion Data.
 - `spark-etl.py`: File for Extract, Transform, Load to Data Warehouse.
+- `spark-ml.py`: File for Machine Learning to predict stock.
 
 Feel free to explore and enhance the project as needed!
