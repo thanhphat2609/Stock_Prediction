@@ -29,7 +29,10 @@ start-all.sh
 
 ```
 hdfs dfs -mkdir -p /user/thanhphat/datalake
+hdfs dfs -chmod g+w /user/thanhphat/datalake
+
 hdfs dfs -mkdir -p /user/hive/warehouse
+hdfs dfs -chmod g+w /user/hive/warehouse
 ```
 
 4. Step run:
