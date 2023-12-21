@@ -16,7 +16,7 @@ spark = SparkSession.builder.appName("SparkIngestion").getOrCreate()
 executionDate = sys.argv[1].split("/")
 year = executionDate[0]
 month = executionDate[1]
-date = executionDate[2]
+day = executionDate[2]
 
 
 # ================================================================================= STEP 2: READ DATA =================================================================================
@@ -36,9 +36,9 @@ df_vcb = read_data_csv(url, file_name)
 
 # ====================================================================== STEP 3: LOAD DATA(PARTITION) TO HDFS ==========================================================================
 
-df_vcb_parition = df_vcb.withColumn("year", lit(year)).withColumn("month", lit(month)).withColumn("date", lit(date))
+df_vcb_parition = df_vcb.withColumn("year", lit(year)).withColumn("month", lit(month)).withColumn("day", lit(day))
 
-df_vcb_parition.write.partitionBy("year", "month", "date").mode("overwrite").csv("hdfs://localhost:9000/user/thanhphat/datalake/", header = True)
+df_vcb_parition.write.partitionBy("year", "month", "day").mode("overwrite").csv("hdfs://localhost:9000/user/thanhphat/datalake/", header = True)
 
 
 
