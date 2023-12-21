@@ -15,6 +15,7 @@ This is a simple stock prediction project using technologies such as HDFS, Apach
 
 ```bash
 git clone https://github.com/thanhphatuit/Stock_Prediction.git
+cd Code
 ```
 
 2. Start Hadoop:
