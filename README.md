@@ -47,4 +47,9 @@ spark-submit spark-ml.py
 - `spark-etl.py`: File for Extract, Transform, Load to Data Warehouse.
 - `spark-ml.py`: File for Machine Learning to predict stock.
 
+## Video demo
+- Ingest: .
+- ETL: .
+- Machine Learning: .
+
 Feel free to explore and enhance the project as needed!
