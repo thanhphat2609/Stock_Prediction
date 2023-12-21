@@ -31,8 +31,15 @@ hdfs dfs -mkdir -p /user/thanhphat/datalake
 hdfs dfs -mkdir -p /user/hive/warehouse
 ```
 
+4. Step run:
 
-4. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
+```
+spark-submit spark-ingest.py
+spark-submit spark-etl.py
+spark-submit spark-ml.py
+```
+
+5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
 
 ## File Structure
 
