@@ -38,7 +38,7 @@ df_vcb = read_data_csv(url, file_name)
 
 df_vcb_parition = df_vcb.withColumn("year", lit(year)).withColumn("month", lit(month)).withColumn("date", lit(date))
 
-df_vcb_parition.write.format("csv").partitionBy("year", "month", "date").mode("append")
+df_vcb_parition.write.partitionBy("year", "month", "date").mode("overwrite").csv("hdfs://localhost:9000/user/thanhphat/datalake/", header = True)
 
 
 
