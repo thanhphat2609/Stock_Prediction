@@ -4,6 +4,12 @@
 
 This is a simple stock prediction project using technologies such as HDFS, Apache Spark, Apache Hive, and Apache Superset.
 
+
+## Architecture 
+
+
+
+
 ## Installation
 
 1. Clone the repository:
