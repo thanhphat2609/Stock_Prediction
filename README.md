@@ -1,4 +1,4 @@
-# Book Recommendation System using Streamlit
+# Stock Prediction with Hadoop
 
 ## Description
 
