@@ -52,7 +52,7 @@ spark-submit spark-ml.py
 - `spark-ml.py`: File for Machine Learning to predict stock.
 
 ## Video demo
-- Ingest: .
+- Ingest: https://youtu.be/cs7IKZtwrK8.
 - ETL: .
 - Machine Learning: .
 
