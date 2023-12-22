@@ -38,21 +38,21 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 4. Step run:
 
 ```
-spark-submit spark-ingestion.py "executionDate"
-spark-submit spark-transformation.py "executionDate"
+
+spark-submit Load.py "executionDate"
+spark-submit Transformation.py "executionDate"
 ```
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
 
 ## File Structure
 
-- `spark-ingest.py`: File for Extract, Load Data to HDFS.
-- `spark-transformation.py`: File for Transformation to Data Warehouse.
-- `spark-ml.ipynb`: File for Machine Learning to predict stock.
+- `Extract.py`: File for Extract data from history of Stock VCB.
+- `Load.py`: File for Load crawl data to HDFS.
+- `Transformation.py`: File for Transformation data from raw data to relational database.
+- `LinearRegression.ipynb`: File for Machine Learning to predict stock.
 
 ## Video demo
-- Ingest: https://youtu.be/cs7IKZtwrK8.
-- ETL: .
-- Machine Learning: .
+- Link: .
 
 Feel free to explore and enhance the project as needed!
