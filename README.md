@@ -40,7 +40,6 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 ```
 spark-submit spark-ingest.py
 spark-submit spark-etl.py
-spark-submit spark-ml.py
 ```
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
@@ -48,8 +47,8 @@ spark-submit spark-ml.py
 ## File Structure
 
 - `spark-ingest.py`: File for Ingestion Data.
-- `spark-etl.py`: File for Extract, Transform, Load to Data Warehouse.
-- `spark-ml.py`: File for Machine Learning to predict stock.
+- `spark-transformation.py`: File for Extract, Transform, Load to Data Warehouse.
+- `spark-ml.ipynb`: File for Machine Learning to predict stock.
 
 ## Video demo
 - Ingest: https://youtu.be/cs7IKZtwrK8.
