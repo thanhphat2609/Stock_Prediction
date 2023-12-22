@@ -61,6 +61,6 @@ beeline -u jdbc:hive2://127.0.0.1:10000
 - `LinearRegression.ipynb`: File for Machine Learning to predict stock.
 
 ## Video demo
-- Link: .
+- Link: [Stock_ELT](https://youtu.be/vpJoBiIIxmk).
 
 Feel free to explore and enhance the project as needed!
