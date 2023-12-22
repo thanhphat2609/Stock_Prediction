@@ -27,7 +27,7 @@ start-all.sh
 
 3. Create directory:
 
-```
+``` bash
 hdfs dfs -mkdir -p /user/thanhphat/datalake
 hdfs dfs -chmod g+w /user/thanhphat/datalake
 
@@ -35,20 +35,27 @@ hdfs dfs -mkdir -p /user/hive/warehouse
 hdfs dfs -chmod g+w /user/hive/warehouse
 ```
 
-4. Step run:
+4. Run files:
 
-```
-
-spark-submit Load.py "executionDate"
+``` bash
+spark-submit Extract_Load.py "executionDate"
 spark-submit Transformation.py "executionDate"
 ```
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
 
+6. Run and connect Apache Hive after Transformation:
+
+``` bash
+./hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console --hiveconf hive.server2.enable.doAs=false
+
+beeline -u jdbc:hive2://127.0.0.1:10000
+
+```
+
 ## File Structure
 
-- `Extract.py`: File for Extract data from history of Stock VCB.
-- `Load.py`: File for Load crawl data to HDFS.
+- `Extract_Load.py`: File for Extract and Load raw data to HDFS.
 - `Transformation.py`: File for Transformation data from raw data to relational database.
 - `LinearRegression.ipynb`: File for Machine Learning to predict stock.
 
