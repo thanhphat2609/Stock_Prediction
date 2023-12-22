@@ -13,21 +13,21 @@ This is a simple stock prediction project using technologies such as HDFS, Apach
 
 1. Clone the repository:
 
-```bash
+```
 git clone https://github.com/thanhphatuit/Stock_Prediction.git
 cd Code
 ```
 
 2. Start Hadoop:
 
-```bash
+```
 hdfs namenode -format
 start-all.sh
 ```
 
 3. Create directory:
 
-``` bash
+```
 hdfs dfs -mkdir -p /user/thanhphat/datalake
 hdfs dfs -chmod g+w /user/thanhphat/datalake
 
@@ -37,12 +37,13 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 
 4. Run files:
 
-``` bash
+```
 spark-submit Extract_Load.py "executionDate"
 spark-submit Transformation.py "executionDate"
 ```
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
+
 
 6. Run and connect Apache Hive after Transformation:
 
