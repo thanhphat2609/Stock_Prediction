@@ -46,8 +46,8 @@ spark-submit spark-transformation.py "executionDate"
 
 ## File Structure
 
-- `spark-ingest.py`: File for Ingestion Data.
-- `spark-transformation.py`: File for Extract, Transform, Load to Data Warehouse.
+- `spark-ingest.py`: File for Extract, Load Data to HDFS.
+- `spark-transformation.py`: File for Transformation to Data Warehouse.
 - `spark-ml.ipynb`: File for Machine Learning to predict stock.
 
 ## Video demo
