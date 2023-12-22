@@ -38,8 +38,8 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 4. Step run:
 
 ```
-spark-submit spark-ingest.py
-spark-submit spark-etl.py
+spark-submit spark-ingestion.py "executionDate"
+spark-submit spark-transformation.py "executionDate"
 ```
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
