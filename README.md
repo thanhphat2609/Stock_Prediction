@@ -7,7 +7,7 @@ This is a simple stock prediction project using technologies such as HDFS, Apach
 
 ## Architecture 
 
-![Stock_Prediction](https://github.com/thanhphatuit/Stock_Prediction/assets/84914537/a4856130-cd5f-4bf0-974a-490dbd7c9fff)
+![StockPrediction](https://github.com/thanhphatuit/InternationalLanguageSchool/assets/84914537/9905b074-499f-45b1-96f2-6577956f4031)
 
 ## Installation
 
