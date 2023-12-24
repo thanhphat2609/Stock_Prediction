@@ -44,8 +44,9 @@ spark-submit Transformation.py "executionDate"
 
 5. Open your browser (Firefox) and go to http://localhost:9870 to interact with the HDFS.
 
+6. Go to http://localhost:8080 to interact with the Superset
 
-6. Run and connect Apache Hive after Transformation:
+7. Run and connect Apache Hive after Transformation:
 
 ``` bash
 ./hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console --hiveconf hive.server2.enable.doAs=false
