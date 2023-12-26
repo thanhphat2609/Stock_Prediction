@@ -1,10 +1,5 @@
 # Stock Prediction with Hadoop
 
-## Description
-
-
-
-
 ## Architecture 
 
 ![StockPrediction](https://github.com/thanhphatuit/InternationalLanguageSchool/assets/84914537/9905b074-499f-45b1-96f2-6577956f4031)
