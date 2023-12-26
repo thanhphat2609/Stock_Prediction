@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple stock prediction project using technologies such as HDFS, Apache Spark, Apache Hive, and Apache Superset.
+
 
 
 ## Architecture 
